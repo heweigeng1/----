@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        th,td{
+            padding: 9px;
+        }
+        li{
+            list-style: none;
+        }
+        ul{
+            padding: 0px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body style="width:100%;">
+    <div style="width:100%;">
+        <h1 style="text-align: center;"> form 表单demo</h1>
+        <div style="width: 350px; margin:auto">
+            <form action="http://www.baidu.com" method="get">
+                <input style="width:260px;height: 20px;" type="text" name="wd" id="kw">
+                <input type="submit" value="提交">
+            </form>
+        </div>
+    </div>
+    <div style="width: 600px; margin:auto;margin-top:50px;">
+        <table class="dataintable" style="width: auto;" border="1px" cellspacing="0">
+            <col width="200px">
+            <col width="200px">
+            <col width="300px">
+            <tbody>
+                <tr style="height:40px;background-color: dimgray;color: white;">
+                    <th>属性</th>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+
+                <tr>
+                    <td>accept</td>
+                    <td>MIME_type</td>
+                    <td><span class="deprecated">HTML 5 中不支持。</span></td>
+                </tr>
+
+                <tr>
+                    <td>accept-charset</td>
+                    <td>charset_list</td>
+                    <td>规定服务器可处理的表单数据字符集。</td>
+                </tr>
+
+                <tr>
+                    <td>action</td>
+                    <td>URL</td>
+                    <td>规定当提交表单时向何处发送表单数据。</td>
+                </tr>
+
+                <tr>
+                    <td class="html5_new">autocomplete</td>
+                    <td>
+                        <ul>
+                            <li>on</li>
+                            <li>off</li>
+                        </ul>
+                    </td>
+                    <td>规定是否启用表单的自动完成功能。</td>
+                </tr>
+
+                <tr>
+                    <td>enctype</td>
+                    <td>见说明</td>
+                    <td>规定在发送表单数据之前如何对其进行编码。</td>
+                </tr>
+
+                <tr>
+                    <td>method</td>
+                    <td>
+                        <ul>
+                            <li>get</li>
+                            <li>post</li>
+                        </ul>
+                    </td>
+                    <td>规定用于发送 form-data 的 HTTP 方法。</td>
+                </tr>
+
+                <tr>
+                    <td>name</td>
+                    <td>form_name</td>
+                    <td>规定表单的名称。</td>
+                </tr>
+
+                <tr>
+                    <td class="html5_new">novalidate</td>
+                    <td>novalidate</td>
+                    <td>如果使用该属性，则提交表单时不进行验证。</td>
+                </tr>
+
+                <tr>
+                    <td>target</td>
+                    <td>
+                        <ul>
+                            <li>_blank</li>
+                            <li>_self</li>
+                            <li>_parent</li>
+                            <li>_top</li>
+                            <li>framename</li>
+                        </ul>
+                    </td>
+                    <td>规定在何处打开 action URL。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

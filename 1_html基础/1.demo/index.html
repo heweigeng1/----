@@ -23,57 +23,39 @@
                         <el-col>
                             <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen"
                                 @close="handleClose">
-                                <el-menu-item index="1-1"
-                                    @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/1_%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2.html')"
-                                    data-pkey="1_第一个页面">1_第一个页面</el-menu-item>
-                                <el-menu-item index="1-1"
-                                    @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/2_%E7%AE%80%E5%8D%95%E7%9A%84%E9%A1%B5%E9%9D%A2.html')"
-                                    data-pkey="2_简单的页面">2_简单的页面</el-menu-item>
-                                <el-menu-item index="1-1"
-                                    @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/3_img.html')"
-                                    data-pkey="3_img">3_img</el-menu-item>
-                                <el-menu-item index="1-1"
-                                    @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/4_table.html')"
-                                    data-pkey="4_table">4_table</el-menu-item>
-                                <el-submenu index="5">
-                                    <template slot="title">
-                                        <span>5_页面跳转demo</span>
-                                    </template>
-                                    <el-menu-item index="1-1"
-                                        @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/index.html')"
-                                        data-pkey="index">index</el-menu-item>
-                                    <el-submenu index="0">
-                                        <template slot="title">
-                                            <span>news</span>
-                                        </template>
-                                        <el-submenu index="0">
-                                            <template slot="title">
-                                                <span>info</span>
-                                            </template>
-                                            <el-menu-item index="1-1"
-                                                @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/info/detail.html')"
-                                                data-pkey="detail">detail</el-menu-item>
-                                            <el-menu-item index="1-1"
-                                                @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/info/games_detail.html')"
-                                                data-pkey="games_detail">games_detail</el-menu-item>
-                                        </el-submenu>
-                                        <el-menu-item index="1-1"
-                                            @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/%E5%A8%B1%E4%B9%90.html')"
-                                            data-pkey="娱乐">娱乐</el-menu-item>
-                                        <el-menu-item index="1-1"
-                                            @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/%E6%B8%B8%E6%88%8F.html')"
-                                            data-pkey="游戏">游戏</el-menu-item>
-                                    </el-submenu>
-                                </el-submenu>
-                                <el-menu-item index="1-1"
-                                    @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/index.html')"
-                                    data-pkey="index">index</el-menu-item>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/1_%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2.html')" data-pkey="1_第一个页面">1_第一个页面</el-menu-item>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/2_%E7%AE%80%E5%8D%95%E7%9A%84%E9%A1%B5%E9%9D%A2.html')" data-pkey="2_简单的页面">2_简单的页面</el-menu-item>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/3_img.html')" data-pkey="3_img">3_img</el-menu-item>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/4_table.html')" data-pkey="4_table">4_table</el-menu-item>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_form.html')" data-pkey="5_form">5_form</el-menu-item>
+<el-submenu index="5">
+    <template slot="title">
+        <span>5_页面跳转demo</span>
+    </template>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/index.html')" data-pkey="index">index</el-menu-item>
+<el-submenu index="0">
+    <template slot="title">
+        <span>news</span>
+    </template>
+<el-submenu index="0">
+    <template slot="title">
+        <span>info</span>
+    </template>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/info/detail.html')" data-pkey="detail">detail</el-menu-item>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/info/games_detail.html')" data-pkey="games_detail">games_detail</el-menu-item>
+</el-submenu>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/%E5%A8%B1%E4%B9%90.html')" data-pkey="娱乐">娱乐</el-menu-item>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/5_%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%ACdemo/news/%E6%B8%B8%E6%88%8F.html')" data-pkey="游戏">游戏</el-menu-item>
+</el-submenu>
+</el-submenu>
+    <el-menu-item index="1-1" @click="onclick('D:/github/%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B/1_html%E5%9F%BA%E7%A1%80/1.demo/index.html')" data-pkey="index">index</el-menu-item>
                             </el-menu>
                         </el-col>
                     </el-row>
                 </el-aside>
                 <el-main style="width: 80%;position: absolute;top: 60px;bottom: 0px;left: 20%;"><iframe id='mybody'
-                        width="100%" height="99%" v-bind:src="url" frameborder="0"></iframe></el-main>
+                        width="100%" height="99%" v-bind:src="url"
+                        frameborder="0"></iframe></el-main>
             </el-container>
         </el-container>
     </div>
@@ -81,7 +63,7 @@
 <script>
     new Vue({
         el: '#app',
-        data: { url: '1_第一个页面.html' },
+        data:{url:'1_第一个页面.html'},
         methods: {
             handleOpen(key, keyPath) {
                 console.log(key, keyPath);
@@ -89,8 +71,8 @@
             handleClose(key, keyPath) {
                 console.log(key, keyPath);
             },
-            onclick(url) {
-                this.url = url
+            onclick(url){
+                this.url=url
                 console.log(url);
             }
         }
